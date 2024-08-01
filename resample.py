@@ -21,7 +21,7 @@ def main():
     データを処理し、CSVファイルに保存します。
     """
     # CSVファイルを読み込む
-    df = pd.read_csv('data6.csv')
+    df = pd.read_csv('data.csv')
     
     # 往路が2024年08月02日のデータのみ抽出
     df_filtered = df[df['往路'] == '2024年08月02日']
@@ -30,7 +30,7 @@ def main():
     df_resampled = resample_and_interpolate(df_filtered)
     
     # CSVファイルに出力
-    df_resampled.to_csv('data6_resample.csv', index=True)
+    df_resampled.to_csv('data_resample.csv', index=True)
 
     print(df_resampled)
 
