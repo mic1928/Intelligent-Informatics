@@ -49,7 +49,7 @@ def preprocess_data(file_path):
 
 # Optunaによるハイパーパラメータ最適化
 def objective(trial):
-    file_path = 'data9_resample.csv'  # 適切なファイルパスに変更してください
+    file_path = 'data_resample.csv'  # 適切なファイルパスに変更してください
     data_features, scaler = preprocess_data(file_path)
     
     time_steps = 200
