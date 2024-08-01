@@ -94,6 +94,3 @@ def main(file_path):
 if __name__ == "__main__":
     file_path = 'data_resample.csv'
     predictions = main(file_path)
-
-
-
